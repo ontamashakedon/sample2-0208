@@ -5,6 +5,9 @@ import (
 )
 
 func main() {
+
+	//リテラル
+
 	x := 1_2_3	//123
 	fmt.Printf("%v\n",x)
 	x = 0b1100	//2進数12
@@ -20,6 +23,15 @@ func main() {
 	fmt.Println(z)
 
 	//unicode
+
+
+	a := 'A'
+	b := '\101'	//8bit8進数
+	b = '\x41'	//8bit16進数
+	b = '\u672c'	//16bit 16進数
+	b = '\U0001F604'//32bit 16進数
+
+	fmt.Println(a,b)
 
 	
 }
